@@ -44,5 +44,16 @@ int main(){
     std::cout << std::endl;
     std::cout << "Result of " << abc << "+" << d << "-" << e << "+" << f << " : " << result << std::endl;
 
+    //using () makes the content inside higher on priority. Parenthesis are resolved from the most internal to most external, left to right.
+    result = a + (b * c) - (d / e) - f + g; //in this example nothing changes, as the parenthesis have the same procedence as before
+    std::cout << std::endl;
+    std::cout << "Result of " << a << "+" << b << "*" << c << "-" << d << "/" << e << "-" << f << "+" << g << " : " << result << std::endl;
+
+    result = (a + b) * (c + d) / (e + f);  //in this example, the additions are done before the multiplication and division. 
+    //this returns 9 * 17 / 5
+    std::cout << std::endl;
+    std::cout << "Result of ( " << a << "+" << b << " ) * ( " << c << "+" << d << " ) / ( " << e << "+" << f << " ) :" << result << std::endl;
+
+
     return 0;
 }
