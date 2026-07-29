@@ -54,6 +54,7 @@ int main(){
     std::cout << std::endl;
     std::cout << "Result of ( " << a << "+" << b << " ) * ( " << c << "+" << d << " ) / ( " << e << "+" << f << " ) :" << result << std::endl;
 
+    //Its a good practice to use () in order to make the code as clear as possible and easy to understand.
 
     return 0;
 }
