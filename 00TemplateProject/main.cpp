@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <ios>
+#include <iomanip>
 
 int main(){
     
