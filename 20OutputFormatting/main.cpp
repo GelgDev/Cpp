@@ -267,19 +267,61 @@ int main(){
     std::cout << "c (after std::setprecision(20)): " << c << std::endl;
     std::cout << std::endl;
 
+    std::cout << std::scientific;
+    std::cout << "double values (std::scientific): " << std::endl;
+    std::cout << "a: " << a << std::endl;
+    std::cout << "b: " << b << std::endl;
+    std::cout << "c: " << c << std::endl; //cant show beacuse of the precision
+    std::cout << std::endl;
+
     std::cout << std::setprecision(6);
     std::cout << std::defaultfloat;
+    std::cout.unsetf(std::ios::scientific | std::ios::fixed);
     
-    std::cout << "double values (std::defaultfloat) to reset: " << std::endl;
+    std::cout << "double values (std::defaultfloat) and std::cout.unsetf(std::ios::scientific | std::ios::fixed) to reset: " << std::endl;
     std::cout << "a: " << a << std::endl;
     std::cout << "b: " << b << std::endl;
     std::cout << "c: " << c << std::endl;
+    
+    std::cout << std::endl;
+    std::cout << std::endl;
+
+    //std::setprecision()
+    //set the amount of numbers shown after the decimal point
+
+    long double prec {3.45765856856746457464564564562222254546664444L};
+    std::cout << "Number with default precision (6): " << prec << std::endl;
+    std::cout << std::endl;
+    std::cout << std::setprecision(10);
+    std::cout << "Number with precision (10): " << prec << std::endl;
+    std::cout << std::endl;
+    std::cout << std::setprecision(20);
+    std::cout << "Number with precision (20): " << prec << std::endl;
+    std::cout << std::endl;
+    std::cout << std::setprecision(6);
+
+
+    std::cout << std::endl;
+    std::cout << std::endl;
+
+    // std::showpoint and noshowpoint
+    // shows the decimal point on round float numbers
+
+    float fl {12.0f};
+
+    std::cout << std::showpoint;
+    std::cout << "std::showpoint: " << fl << std::endl;
+    std::cout << std::endl;
+    std::cout << std::noshowpoint;
+    std::cout << "std::noshowpoint (default): " << fl << std::endl;
 
 
     std::cout << std::endl;
     std::cout << std::endl;
 
     //
+
+
 
 
 
