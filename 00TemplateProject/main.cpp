@@ -3,10 +3,22 @@
 #include <ios>
 #include <iomanip>
 #include <limits>
+#include <cmath>
 
 int main(){
     
-    std::cout << "Hello World!" << std::endl;
+    std::cout << "------------------------------------------" << std::endl;
+    std::cout << std::endl;
+
+
+
+
+
+
+
+
+
+
 
     return 0;
 }
